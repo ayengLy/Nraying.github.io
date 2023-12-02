@@ -1,0 +1,93 @@
+<style>
+    h1 span {
+color: #FFE5B4;
+position: relative;
+}
+h1 span::before {
+content: "";
+height: 30px;
+width: 2px;
+position: absolute;
+top: 50%;
+right: -8px;
+background: #FFE5B4;
+transform: translateY(-45%);
+animation: blink 0.7s infinite;
+}
+h1 span.stop-blinking::before {
+animation: none;
+}
+@keyframes blink {
+50% { opacity: 0 }
+}
+</style>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NurAin Website</title>
+	<!---custom css link---->
+	<link rel="stylesheet" href="mystyle.css">
+
+
+	 <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="js/script.js" defer></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("qkS1vesZ3Oxz1fzqf");
+   })();
+</script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+                <ul id="sidemenu">
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="Myproject.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>                    
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Welcome to My Personal Portfolio Website</p>
+                <h1>Hi, Im <span>Nur Ain</span></h1>
+                <p> Check out my other pages</p>
+            </div>
+            <div class="about-btn"><i class="fa-solid fa-magnifying-glass-arrow-right"></i><a href =about.html class="btn btn1">About Me</a></div>
+            <div class="project-btn"><i class="fa-solid fa-magnifying-glass-arrow-right"></i><a href =projects.html class="btn btn1">Projects</a></div>
+            <div class="contact-btn"><i class="fa-solid fa-magnifying-glass-arrow-right"></i><a href =contact.html class="btn btn1">Contact Me</a></div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023 roos. All rights reserved. </p>
+        </div>
+    </div>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-150px";
+        }
+
+
+    </script>
+
+</body>
+
+</html>

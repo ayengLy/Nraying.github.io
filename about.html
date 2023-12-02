@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <script src="https://kit.fontawesome.com/ae3782667d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+    <div id="about">
+        <div class="container">
+            <nav>
+                <img src="img/logo.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="Project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/AIN.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <h4>Hi, I'm NUR AIN </h4>
+						<p>Im born and grew up in Ladang Tingkayu SDN BHD, Kunak , Sabah. I did schooling and finished my SPM at Sekolah Menengah Kebangsaan Madai, graduated from STPM at the same school in Kunak
+						 Now i'm pursuing degree's in UNISZA. I believe my strength is my attitude, 
+						 and I like to take up challenges and think to accept both success and failure in a balanced way to move forward. 
+						 I want to say that I am someone who's willing to do anything to be successful as long as what I do is good for me and the people around me.
+						  My short-term goal is to find a platform to expand my career and grow with the organization. 
+						  And my long-term goal is to be the cause of the organization's success.
+						 Therefore, I always challenge myself to improve my progress and steady growth.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Communication</span><br>english,bahasa melayu</li>
+                            <li><span>Sport</span><br>Playing netball,badminton and handball</li>
+                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2019</span><br>Sabah's representative in netball</li>
+                        
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>Malaysian Certificate of Education</li>
+                            <li><span>2022</span><br>Malaysian High School Certificate</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023 roos. All rights reserved. </p>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemeu.style.right = "-150px";
+    }
+
+
+</script>
+
+
+
+</body>
+
+</html>

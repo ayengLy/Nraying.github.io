@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block; /* Removes extra space below inline images */
+        }
+    </style>
+    <title>Projects</title>
+    <link rel="stylesheet" href="myproject.css">
+    <script src="https://kit.fontawesome.com/ae3782667d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="projects">
+        <div class="container">
+            <nav>
+                <img src="img/logo.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="Myproject.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>                    
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list"></div>
+            <div class="projects"></div>
+                <div class = "layer"></div>
+			<section class="myachievement" id="myachievement">
+				<div class="main-text">
+					<h2><span>My</span> Project</h2>
+				</div>
+		
+				<div class="myachievement-content">
+					<div class="box">
+						<div class="img">
+							<p><br></p>
+							<p><br></p>
+							<p><br></p>
+							<img src="img/food.jpg">
+							<p><br></p>	
+							<p><br></p>
+							<p><br></p>
+						</div>
+						<h3>System Ordering Food</h3>
+						<p>The system will allow students to make orders from various
+							stalls, view menus and track their orders without having to contact stall owners
+							and only using the system itself.</p>
+						<a href="https://www.upmenu.com/" target="_blank"		class="read">Read More</a>
+					</div>
+		
+					<div class="box"></div>
+						<div class="s-icons">
+							<p><br></p>
+							<p><br></p>
+							<p><br></p>
+						<img src="img/project 2.jpg">
+								<p><br></p>
+								<p><br></p>
+								<p><br></p>
+							</div>
+						<h3>Application Design</h3>
+						<p>The application design that my group doing in the 
+							past of semester is about Order Go for food application in subject Problem solving</p>
+						<a href="https://halo.express/food" target="_blank" class="read">Read More</a>
+					</div>
+		
+					<div class="box">
+						<div class="s-icons">
+							<p><br></p>
+							<p><br></p>
+							<p><br></p>
+							<img src="img/watpad.jpg">
+							<p><br></p>
+							<p><br></p>
+							<p><br></p>
+						</div>
+						<h3>Watpad</h3>
+						<p>Wattpad connects a global community of millions of readers and writers through the power of story.</p>
+						<a href="https://www.wattpad.com/" target="_blank" class="read">Read More</a>
+					</div>
+				</div>
+			</section>
+        <div class="copyright">
+            <p>Copyright © 2023 roos. All rights reserved. </p>
+        </div>
+    </div>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-150px";
+        }
+
+
+    </script>
+
+</body>
+
+</html>
